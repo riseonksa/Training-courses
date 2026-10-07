@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ====== SEO ====== -->
+  <title>الدورات التدريبية | Riseon</title>
+  <meta name="description" content="تصفّح الدورات التدريبية التي تقدمها Riseon وابدأ رحلة تطوير مهاراتك. اضغط للدخول مباشرة إلى مكتبة الدورات.">
+  <meta name="keywords" content="Riseon, دورات تدريبية, تدريب, تطوير المهارات, كورسات">
+  <meta name="author" content="Riseon">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0f2c">
+
+  <!-- ====== الأيقونات ====== -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!--
+    ====== Open Graph (واتساب / فيسبوك / تيليجرام / لينكدإن) ======
+    ملاحظة: بعد رفع الموقع، استبدل رابط الصورة بالسطر الأفضل:
+    https://رابط-موقعك/og-image.png   (الملف og-image.png موجود في المجلد)
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:site_name" content="Riseon">
+  <meta property="og:title" content="الدورات التدريبية | Riseon">
+  <meta property="og:description" content="تصفّح الدورات التدريبية التي تقدمها Riseon وابدأ رحلة تطوير مهاراتك الآن.">
+  <meta property="og:image" content="https://i.ibb.co/VYW59L4H/20260719-201501-0000.png">
+  <meta property="og:image:secure_url" content="https://i.ibb.co/VYW59L4H/20260719-201501-0000.png">
+  <meta property="og:image:alt" content="شعار Riseon">
+
+  <!-- ====== Twitter / X ====== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="الدورات التدريبية | Riseon">
+  <meta name="twitter:description" content="تصفّح الدورات التدريبية التي تقدمها Riseon وابدأ رحلة تطوير مهاراتك الآن.">
+  <meta name="twitter:image" content="https://i.ibb.co/VYW59L4H/20260719-201501-0000.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#0a0f2c; --blue:#3a3fd6; --blue2:#2a2f9e; --orange:#ff5a1f; --orange2:#ff8a3d;
+      --text:#f3f5ff; --muted:#aab3d6; --border:rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{min-height:100%}
+    body{
+      font-family:'Cairo',system-ui,sans-serif; color:var(--text); background:var(--navy);
+      display:flex; align-items:center; justify-content:center; padding:20px; min-height:100vh;
+      overflow-x:hidden; position:relative;
+    }
+    .bg{position:fixed;inset:0;z-index:0;overflow:hidden}
+    .orb{position:absolute;border-radius:50%;filter:blur(100px);animation:float 14s ease-in-out infinite}
+    .o1{width:440px;height:440px;background:var(--blue);opacity:.55;top:-140px;right:-110px}
+    .o2{width:380px;height:380px;background:var(--orange);opacity:.35;bottom:-150px;left:-110px;animation-delay:-6s}
+    @keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-40px)}}
+    .grid{position:absolute;inset:0;
+      background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+      background-size:44px 44px;mask-image:radial-gradient(circle at center,#000 25%,transparent 75%);
+      -webkit-mask-image:radial-gradient(circle at center,#000 25%,transparent 75%)}
+
+    .card{
+      position:relative; z-index:1; width:100%; max-width:540px; text-align:center;
+      background:rgba(255,255,255,.06); border:1px solid var(--border); border-radius:28px;
+      padding:34px 28px 30px; backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+      box-shadow:0 30px 80px rgba(0,0,0,.5); animation:rise .9s cubic-bezier(.2,.8,.2,1) both;
+    }
+    @keyframes rise{from{opacity:0;transform:translateY(24px) scale(.98)}to{opacity:1;transform:none}}
+
+    .logo{
+      display:block;background:#fff;border-radius:20px;padding:18px 24px;margin:0 auto 26px;
+      box-shadow:0 14px 40px rgba(0,0,0,.35); max-width:380px;
+    }
+    .logo img{display:block;width:100%;height:auto}
+
+    .badge{display:inline-block;font-size:.82rem;font-weight:700;color:var(--orange2);
+      background:rgba(255,90,31,.12);border:1px solid rgba(255,90,31,.35);
+      padding:5px 15px;border-radius:99px;margin-bottom:14px}
+    h1{font-size:clamp(1.55rem,5vw,2.1rem);font-weight:800;line-height:1.4;margin-bottom:10px}
+    h1 span{background:linear-gradient(90deg,var(--orange),var(--orange2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    p.lead{color:var(--muted);font-size:1rem;line-height:1.9;margin-bottom:26px}
+
+    .btn{
+      display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+      font-family:inherit;font-size:1.1rem;font-weight:700;color:#fff;text-decoration:none;
+      background:linear-gradient(135deg,var(--orange),var(--orange2));
+      padding:16px 24px;border-radius:16px;transition:.3s;
+      box-shadow:0 12px 30px rgba(255,90,31,.4);
+    }
+    .btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(255,90,31,.55)}
+    .btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+    .btn svg{width:22px;height:22px;transition:.3s}
+    .btn:hover svg{transform:translateX(-5px)}
+
+    .redirect{margin-top:22px;font-size:.92rem;color:var(--muted)}
+    .bar{height:5px;background:rgba(255,255,255,.1);border-radius:9px;overflow:hidden;margin:12px 0 8px}
+    .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--orange));border-radius:9px}
+    .redirect b{color:var(--text)}
+    .cancel{background:none;border:none;color:var(--orange2);font-family:inherit;font-size:.9rem;cursor:pointer;text-decoration:underline;margin-top:4px}
+
+    .features{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px;padding-top:20px;border-top:1px solid var(--border)}
+    .features span{font-size:.82rem;color:var(--muted);background:rgba(255,255,255,.06);padding:6px 13px;border-radius:99px}
+    footer{margin-top:18px;font-size:.78rem;color:#7f89b0}
+
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="bg"><div class="orb o1"></div><div class="orb o2"></div><div class="grid"></div></div>
+
+  <main class="card">
+    <div class="logo">
+      <img src="logo.png" alt="شعار Riseon" width="1000" height="295">
+    </div>
+
+    <span class="badge">منصة الدورات التدريبية</span>
+    <h1>ارتقِ بمهاراتك مع <span>دورات Riseon</span></h1>
+    <p class="lead">مجموعة من الدورات التدريبية المتخصصة لتطوير مهاراتك وتحقيق أهدافك المهنية. اضغط على الزر للدخول إلى مكتبة الدورات.</p>
+
+    <a id="go" class="btn" href="https://drive.google.com/drive/folders/1L3VT23kxJfMRysWB406msy4t4zGoEd21" rel="noopener">
+      الدخول إلى الدورات التدريبية
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </a>
+
+    <div class="redirect" id="redirect">
+      <div class="bar"><i id="fill"></i></div>
+      سيتم تحويلك تلقائياً خلال <b id="sec">5</b> ثوانٍ…
+      <br><button class="cancel" id="cancel" type="button">إلغاء التحويل التلقائي</button>
+    </div>
+
+    <noscript><p class="redirect">فعّل جافاسكريبت للتحويل التلقائي، أو اضغط على الزر أعلاه.</p></noscript>
+
+    <div class="features">
+      <span>✓ محتوى احترافي</span><span>✓ وصول مباشر</span><span>✓ تحديث مستمر</span>
+    </div>
+    <footer>© <span id="yr"></span> Riseon — جميع الحقوق محفوظة</footer>
+  </main>
+
+  <script>
+    (function(){
+      var url = document.getElementById('go').href;
+      var total = 5, left = total, stopped = false;
+      var sec = document.getElementById('sec'), fill = document.getElementById('fill');
+      document.getElementById('yr').textContent = new Date().getFullYear();
+
+      requestAnimationFrame(function(){
+        fill.style.transition = 'width ' + total + 's linear';
+        fill.style.width = '100%';
+      });
+
+      var timer = setInterval(function(){
+        if(stopped) return;
+        left--; sec.textContent = Math.max(left,0);
+        if(left <= 0){ clearInterval(timer); window.location.replace(url); }
+      }, 1000);
+
+      document.getElementById('cancel').addEventListener('click', function(){
+        stopped = true; clearInterval(timer);
+        fill.style.transition = 'none';
+        document.getElementById('redirect').style.display = 'none';
+      });
+    })();
+  </script>
+</body>
+</html>
